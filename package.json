@@ -1,0 +1,50 @@
+{
+    "name": "JSONpad",
+    "version": "2.0.0",
+    "description": "JSON editor",
+    "main": "main.js",
+    "scripts": {
+        "start": "better-npm-run start:prod",
+        "dev": "better-npm-run start:dev"
+    },
+    "betterScripts": {
+        "start:prod": {
+            "command": "electron main.js",
+            "env": {
+                "NODE_ENV": "production"
+            }
+        },
+        "start:dev": {
+            "command": "electron main.js",
+            "env": {
+                "NODE_ENV": "development"
+            }
+        }
+    },
+    "bin": {
+        "electron": "./node_modules/.bin/electron"
+    },
+    "repository": {
+        "type": "git",
+        "url": "git+https://github.com/ShrimpDev/JSONpad.git"
+    },
+    "keywords": [
+        "JSON",
+        "Editor",
+        "Electron"
+    ],
+    "author": "CSoellinger <dev@csoellinger.at>",
+    "license": "MIT",
+    "bugs": {
+        "url": "https://github.com/ShrimpDev/JSONpad/issues"
+    },
+    "homepage": "https://github.com/ShrimpDev/JSONpad#readme",
+    "contributors": [],
+    "dependencies": {
+        "electron-debug": "^0.5.*"
+    },
+    "devDependencies": {
+        "better-npm-run": "0.0.5",
+        "electron-prebuilt": "^0.36.*"
+    }
+}
